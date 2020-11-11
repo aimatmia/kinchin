@@ -3,9 +3,9 @@ const firebaseAdmin = require("firebase-admin");
 if (!firebaseAdmin.apps.length) {
   firebaseAdmin.initializeApp({
     credential: firebaseAdmin.credential.cert({
-      projectId: process.env.FIREBASE_PROJECT_ID,
-      clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-      privateKey: process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, "\n"),
+      projectId: "kinchin-1c00b",
+      clientEmail: "firebase-adminsdk-i07fy@kinchin-1c00b.iam.gserviceaccount.com",
+      privateKey: "nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDal9iCeVMC4UnK\npmHnSIezLKwEFF/pLPkYbPOrmU1h51+BQ7z34Kxslyz6ieFr1cn7yxz0p5OOZT1g\n52gIHv7G3SjLmyzvKKqmA8YkdsgzKbNG5D2+N8xddzCnUb4XkDXhxKGWrRB3dJAn\n6HsEMN1lE8Pp8PVD983aYAZYGqivAj1XV96ZGhldHXc0hvrUr5lJjEOqNVKAiba0\nxK6zqydoZfsesAa5TKjKm3ud+kyK3A6euHXKdrBaVjP+DyPk34bBgCyOYa3RVSPJ\nyXZbzDboStUd5YDjb7xWP+uTyypGghn3sVyj7cGXwaxOl3B32zvsVJytYhK28SfG\nzeqVDHURAgMBAAECggEAB/d1xBeQ329/hXu34LqDe5O6tzFY54Ikl+/Ml6nwKIvK\nrsbdubj9/70ovf7NcOUrRdp6tS3wUkW9TW1RnM4oYe4IgRcoNZUpVwCXNZgApuCz\nsHc8CtU0xQlFhCuV/nzagd5tNzUafwgIAvRVm2r+fqMQRlPqVG5RGc7bHFXoZOxi\nMBp0+JlpyaSzHO0xJCvquQ2Y5zdpBCoi0+y4SxIJZTmvx4C/krK7AIPW0gxsrAr7\n9PFoZT7m6k6sXlKnEiZSTtYzcvR/SXWnJqjhcBwBhZJS2gqBWRkiYyq4aufH81+Z\n7HIwLM+pXDOmIAjYLBm8U0paEv7ViEdcRNxdhLqg4wKBgQD9iwFHHLm16y+PAc1i\nQti7d0QlHQiB+T1kMMUfSm7jnnEDduEo7CcyoqFhYSvS5zUOLMLTXke5oyKHJB6E\nNeFf1l0WINOQrSflJmDdhyGLCZGIw9OrIfhxKNKZwmF8YDh7P9SBEE82cpF/e/hK\nsuvaxRYOI4iqUpKygy0prBcyfwKBgQDctiLsQmeHLv8itHzRSFxspG2HqWIqVmhZ\nzCAeoFgipGGlzZYNgJZNBrbrCWMqAgH/b0tlXfM/QRRpz3zTr+pUBkCxO6siPKyC\nZXR7yTRUkDsaC5NSEt8Lsch3o6AkbKHnmIAiQxdDgoqL7PAL5CJnvflwpsw4vQS+\nOu6UUBpwbwKBgQCn1/Kzmd+S/6uPNzk4uFnz2GODUjIEoPO0NNj5+vNnucbE7Vjn\nF1ZnnePJrGMvjiHATX94H6zJxqYf4phVG7okEKu072w/FXIYr4xmeoOJIH94k3K3\nkph+iPDKGzUf+i7J4JqUCjD2MWgChhX7lXCvddNA7uMVJe65QD+Qm70LjwKBgB2v\nxey/VcuCD8EsQ6mmsP/P8geQSerl6m1BnoRgDtrB/3xctbUlOZIsuAfPIG5zDK+9\n2YdN5rz4VPWSefjDLaKVoLf2DaOyQ4XafZt0ybwiFkD/k5YzgZrCE/O7p3uevPw4\nr+tr2MI02cvOV89RpSsNC3MSjF+JVQz9Qj/isluzAoGAUUiVGOeQf/nhHLtHMNFy\nMhaCf45HFj1uFEEG+2qTQfPVDnQLRE+NzCRdm+5GXVO8XCmZ48i2IRgshyzcsyGX\nCCK2neEGvyFCmxMQeaABWVpKbS21pSjpvBtvw1icr87yPsROvcnp/X3rxWj1fx1l\nZ876R62Uk1bt3DR2C3jfYuM=",
     }),
     databaseURL: `https://${process.env.FIREBASE_PROJECT_ID}.firebaseio.com`,
   });
